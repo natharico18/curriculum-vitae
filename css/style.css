@@ -6,7 +6,6 @@
 }
 body {
   background:#e7d5d7;
-  color: #816265;
 }
 h1 {
   font-size: 40px;
@@ -56,12 +55,15 @@ a {
 .profile-red {
   padding: 20px 10px;
 }
+.img-profile-home {
+  margin: 0 auto;
+  width: 18%;
+}
 .img-profile-second {
-  width: 200px;
+  width: 160px;
   height: 200px;
   margin-top: 15px;
   border-radius: 50%;
-  margin-left: 42%;
   border: solid #816265;
 }
 h2, .p-profile{
@@ -81,7 +83,7 @@ h2, .p-profile{
 .topnav ul{
   background-color: #e7c3c6;
   display: table;
-  padding-left: 10%;
+  padding-left: 15%;
   width: 100%;
 }
 
@@ -90,7 +92,7 @@ h2, .p-profile{
   display: block;
   color: #000;
   text-decoration: none;
-  padding: 10px 50px;
+  padding: 5px 40px;
 }
 
 .topnav li:hover {
@@ -109,7 +111,7 @@ h2, .p-profile{
   margin-left: 20%;
   background-color: #f67280;
   border-radius: 20px;
-  color: white;
+  color: #e7d5d7;
 }
 .png-progress{
   position: relative;
@@ -161,9 +163,9 @@ h2, .p-profile{
 }
 .timeline{
   position:relative;
-  margin: 50px auto;
+  margin: 10px auto;
   width:1000px;
-  padding:50px 0;
+  padding: 20px 0;
 }
 .timeline ul{
   margin:0;
@@ -178,10 +180,12 @@ h2, .p-profile{
   padding: 40px 70px;
 }
 .timeline ul li .right-content h2 {
+  width: 100%;
   color: #DE547A;
   padding:0px 15px 15px 0px;
-  border: 5px solid #6DB4DC ;
-  border-radius: 20px;
+  font-size: 20px;
+  border: 5px solid #6DB4DC;
+  border-radius: 10px;
 }
 .timeline ul li:nth-child(odd){
   float:left;
@@ -222,12 +226,12 @@ h2, .p-profile{
 .timeline ul li:nth-child(odd) .left-content{
   position:absolute;
   top:12px;
-  right:-190px;
+  right:-200px;
   margin:0;
-  padding:8px 16px;
-  color:#816265;
+  padding:8px 15px;
+  color:#2b2929;
   box-shadow:0 0 0 3px rgba(59,112,239,0.3);
-  border-radius:18px;
+  border-radius:10px;
   
 }
 .timeline ul li:nth-child(even) .left-content{
@@ -236,7 +240,7 @@ h2, .p-profile{
   left:-310px;
   margin:0;
   padding:8px 16px;
-  color:#816265;
+  color:#2b2929;
   box-shadow:0 0 0 3px rgba(59,112,239,0.3);
   border-radius:18px;
   
@@ -274,38 +278,30 @@ h2, .p-profile{
     left:50px;
     right:inherit;
   }
-
 }
 /* Estilos Experiencia Laboral*/
-.column {
-  margin: 0 auto;
-  float: left;
-  width: 25%;
-  margin-bottom: 15px; 
-  margin-left: 10%;
-}
 .card {
-  width: 100%;
+  margin-left: 26%;
 }
 .card-img{
-  width: 100%;
+  width: 60%;
   height: auto;
 }
 .card-title{
+  width: 64%;
   padding: 5px 20px;
-  background-color: #DE547A;
+  background-color: #f67280;
   color: #ffffe3;
 }
-.card-prin{
-  position: relative;
-  margin-left: 10%;
+.card-body {
+  width: 64%;
 }
 
 /* Estilos Formulario */
 .container-form {
   padding: 16px;
   margin: 0 auto;
-  width: 100%;
+  width: 50%;
 }
 input  {
   width: 100%;
@@ -345,7 +341,7 @@ footer {
   margin:0 10%;
   height: 40px;
   background-color: #f67280;
-  color: white;
+  color: #e7d5d7;
   text-align: center;
 }
 
@@ -416,17 +412,21 @@ footer {
     display: block;
     text-align: left;
   }
-  .column {
+  .card {
     width: 100%;
-    display: block;
     margin-left: 0;
-    margin-bottom: 20px;
   }
   .card-img {
-    padding: 40px;
-    margin-left: 15px;
     width: 80%;
+    margin-left: 30px;
   }
+  .card-body{
+    width: 100%;
+  }
+  .card-title{
+    width: 100%;
+  }
+  
   .profile-img {
     width: 100%;
     margin: 0 auto;
@@ -437,15 +437,15 @@ footer {
   .img-profile-header {
     width: 100%;
   }
+  .profile-img {
+    width: 100%;
+  }
   .profile-red {
     font-size: 20px;
     margin: 0;  
   }
-  .img-profile-second{
-    width: 100%;
-    height: auto;
-    margin-left: 0px;
-    max-width: 800px;
+  .img-profile-home {
+    margin-left: 30%;
   }
   .p-profile {
     width: 100%;
@@ -458,6 +458,9 @@ footer {
   }
   .container-progress{
     width: 90%;
+  }
+  .container-form{
+    width: 100%;
   }
 }
 @media screen and (max-width: 600px) {
